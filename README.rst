@@ -6,7 +6,8 @@ cookiecutter-flask-pythonic
    :target: https://travis-ci.org/tony/cookiecutter-flask-pythonic
 
 Forked from `cookiecutter`_ template for a Python package. Forked from
-`audreyr/cookiecutter-pypackage`_.
+`audreyr/cookiecutter-pypackage`_ +
+`tony/cookiecutter-pypackage-pythonic`_.
 
 It is inspired by `flask`_ and `werkzeug`_'s project style patterns. It is
 used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects. The app
@@ -150,7 +151,7 @@ Generate a Python package project:
 
 .. code-block:: bash
 
-    $ cookiecutter https://github.com/tony/cookiecutter-pypackage.git
+    $ cookiecutter https://github.com/tony/cookiecutter-flask-pythonic.git
 
 Then:
 
@@ -169,13 +170,16 @@ Don't worry, you have options:
 Similar Cookiecutter Templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `audreyr/cookiecutter-pypackage`_: Original pypackage.
+* `audreyr/cookiecutter-pypackage`_: Forked from
+  ``tony/cookiecutter-pypackage-pythonic``.
+* `tony/cookiecutter-pypackage-pythonic`_: What this is based off of
 * `sloria/cookiecutter-flask`_: A flask template with Bootstrap 3, asset
   bundling + minification, starter templates and user accounts.
 * Also see the `network`_ and `family tree`_ for this repo. (If you find
   anything that should be listed here, please add it and send a pull
   request!)
 
+.. _tony/cookiecutter-pypackage-pythonic: https://github.com/sloria/cookiecutter-pypackage-pythonic
 .. _sloria/cookiecutter-flask: https://github.com/sloria/cookiecutter-flask
 
 Fork This / Create Your Own
