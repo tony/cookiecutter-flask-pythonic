@@ -2,8 +2,8 @@
 cookiecutter-flask-pythonic
 ===========================
 
-.. image:: https://img.shields.io/travis/tony/cookiecutter-flask-pypackage.svg
-   :target: https://travis-ci.org/tony/cookiecutter-flask-pypackage
+.. image:: https://img.shields.io/travis/tony/cookiecutter-flask-pythonic.svg
+   :target: https://travis-ci.org/tony/cookiecutter-flask-pythonic
 
 Forked from `cookiecutter`_ template for a Python package. Forked from
 `audreyr/cookiecutter-pypackage`_.
