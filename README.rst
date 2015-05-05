@@ -1,16 +1,17 @@
-==================
-cookiecutter-flask
-==================
+===========================
+cookiecutter-flask-pythonic
+===========================
 
-.. image:: https://img.shields.io/travis/tony/cookiecutter-flask.svg
-   :target: https://travis-ci.org/tony/cookiecutter-flask
+.. image:: https://img.shields.io/travis/tony/cookiecutter-flask-pypackage.svg
+   :target: https://travis-ci.org/tony/cookiecutter-flask-pypackage
 
 Forked from `cookiecutter`_ template for a Python package. Forked from
-`audreyr/cookiecutter-pypackage`_, and then sprinkling in elements of
-`pypa/warehouse`_'s app object.
+`audreyr/cookiecutter-pypackage`_.
 
 It is inspired by `flask`_ and `werkzeug`_'s project style patterns. It is
-used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects.
+used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects. The app
+object is based on early versions `pypa/warehouse`_, when it used
+`werkzeug`_ (see `warehouse's old app object`_).
 
 - Free software: BSD license
 - Vanilla testing setup with `unittest` and `python setup.py test`
@@ -19,6 +20,8 @@ used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects.
 - Sphinx_ docs: Documentation ready for generation with, for example, 
   ReadTheDocs_. Note: You can install sphinx docs requirements with 
   ``$ pip install -r docs/requirements.txt``.
+  
+.. _warehouse's old app object: https://github.com/pypa/warehouse/blob/werkzeug/warehouse/application.py#L68
 
 Additions and changes
 ---------------------
