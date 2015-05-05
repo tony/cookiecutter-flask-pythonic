@@ -172,7 +172,8 @@ Similar Cookiecutter Templates
 
 * `audreyr/cookiecutter-pypackage`_: Forked from
   ``tony/cookiecutter-pypackage-pythonic``.
-* `tony/cookiecutter-pypackage-pythonic`_: What this is based off of
+* `tony/cookiecutter-pypackage-pythonic`_: This package's fork. Includes
+  python 2 + 3, sphinx, unit tests, and more.
 * `sloria/cookiecutter-flask`_: A flask template with Bootstrap 3, asset
   bundling + minification, starter templates and user accounts.
 * Also see the `network`_ and `family tree`_ for this repo. (If you find
