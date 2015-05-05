@@ -1,9 +1,10 @@
-======================
-cookiecutter-pypackage
-======================
+==================
+cookiecutter-flask
+==================
 
 Forked from `cookiecutter`_ template for a Python package. Forked from
-`audreyr/cookiecutter-pypackage`_.
+`audreyr/cookiecutter-pypackage`_, and then sprinkling in elements of
+`pypa/warehouse`_'s app object.
 
 It is inspired by `flask`_ and `werkzeug`_'s project style patterns. It is
 used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects.
@@ -16,6 +17,21 @@ used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects.
 
 Additions and changes
 ---------------------
+
+- (feature) app factory can be configured with ini, yaml or json
+  (`pypa/warehouse`_, `cihai`_ style) and by specifying options via CLI.
+  Flask-Script only supports ``-c config_file``. Application factory can
+  be wired to support option args and config file (pypa/warehouse, cihai)
+- (feature / removal) - use `flask testing client`_ for tests, remove
+  dependency on `flask-testing`_.
+- (feature) config file declaratively pulls blueprints from python paths
+  add them in the app factory.
+- (coverage) unittests against flask api, blueprint example module.
+
+.. _pypa/warehouse: https://github.com/pypa/warehouse
+.. _cihai: https://github.com/cihai/cihai-python
+.. _flask testing client: http://flask.pocoo.org/docs/testing/
+.. _flask-testing: https://pythonhosted.org/Flask-Testing/
 
 Testing
 ~~~~~~~
