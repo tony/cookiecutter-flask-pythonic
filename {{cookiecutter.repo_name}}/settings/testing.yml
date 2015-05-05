@@ -1,0 +1,5 @@
+debug: True
+host: localhost
+port: 5454
+blueprints:
+  '/blueprint_example': '{{cookiecutter.repo_name}}.blueprint_example.blueprint_example'

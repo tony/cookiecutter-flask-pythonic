@@ -1,0 +1,25 @@
+=========
+Changelog
+=========
+
+Here you can find the recent changes to {{ cookiecutter.project_name }}..
+
+.. changelog::
+    :version: dev
+    :released: Ongoing
+
+    .. change::
+        :tags:  docs
+
+        Updated CHANGES.
+
+.. changelog::
+    :version: {{ cookiecutter.version }}
+    :released: {{ cookiecutter.release_date }}
+
+    .. change::
+        :tags: project
+
+        First release on PyPi.
+
+.. todo:: vim: set filetype=rst:

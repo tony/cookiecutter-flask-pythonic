@@ -1,0 +1,121 @@
+=========
+Changelog
+=========
+
+Here you can find the recent changes to cookiecutter-pypackage
+
+2015-03-26
+----------
+
+- Add changelog
+- Update to use the ``__about__``  package metadata convention from
+  `pypa/warehouse`_.
+- Update ``README.rst`` example of how package meta data is eval'd.
+- Deprecate ``package_metadata.py``.
+- For ``__future__`` imports, do parens instead of ``\`` for line breaks.
+  
+.. _pypa/warehouse: https://github.com/pypa/warehouse
+
+Forked
+------
+
+Forked from `audreyr/cookiecutter-pypackage`_ on February 2, 2014.
+
+Testing
+~~~~~~~
+
+- `flask`_/`werkzeug`_-style testsuites. See `werkzeug testsuite`_ on
+  github.
+- Use ``run-tests.py`` to run all tests, or pass in arguments to test a
+  particular ``TestSuite``, ``TestCase`` or ``Test``:
+
+  .. code-block:: bash
+
+      $ ./run-tests.py
+      $ ./run-tests.py yourpackage
+      $ ./run-tests.py repo_name.repo_name  # package_name.TestSuite
+      $ ./run-tests.py yourpackage.testsuite.test_something
+      $ ./run-tests.py testsuite.test_something
+      $ ./run-tests.py test_something
+      $ ./run-tests.py test_something test_something_docstring
+
+- ``setup.py`` downloads ``unittest2`` for python 2.6.
+
+Python 2.7+3.3
+~~~~~~~~~~~~~~
+
+- .. code-block:: python
+
+      from __future__ import absolute_import, division, print_function, \
+          with_statement, unicode_literals
+- ``repo_name/_compat.py`` module (derived from flask, werkzeug and
+  jinja2.) Why a compatibility module? See Armin Ronacher's post `Porting
+  to Python 3 Redux`_.
+
+.. _Porting to Python 3 Redux: http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/
+
+Packaging
+~~~~~~~~~
+
+- ``repo_name/__init__.py`` + ``package_metadata.py``: Metadata in
+  ``repo_name/__init__.py`` e.g. ``__title__``, ``__author__`` can be
+  accessed via:
+
+  .. code-block:: python
+
+      >>> import sys
+      >>> sys.path.insert(0, path_to_projectroot)  # on a one-off basis
+      >>> from package_metadata import p
+      >>> print(p.title)
+      Your project name
+
+  Keeps ``setup.py`` and ``doc/conf.py`` in sync with package metadata.
+  pypi and readthedocs distributions build off the latest package data.
+
+  This method avoids cost of tokenizing and importing python file and
+  avoids encountering potential import errors that may arise. It simple
+  opens the files and pulls data by regex.
+
+  Derived from: `How can I get the version defined in setup.py setuptools
+  in my package?`_ on StackOverflow.
+
+- Relative imports in ``repo_name/__init__.py``.
+- Relative imports in ``repo_name/testsuite/__init__.py``.
+- Relative imports in ``repo_name/testsuite/{{ cookiecutter.package_name }}.py``.
+
+Docs
+~~~~
+
+- ``README.rst`` reStructuredText table for project information.
+- vim modelines for ``rst`` in ``TODO`` and ``CHANGELOG``.
+- ``docs/requirements.txt``, which can be targetted to install `sphinx
+  changelog`_ package on `ReadTheDocs`. It will also trigger `-r
+  ../requirements.txt`.
+- `sphinx changelog`_ module, (imitation of `sqlalchemy`_, see `sqlalchemy
+  changelog`_)
+- Add ``TODO`` and ``docs/roadmap.rst``.
+- Rename ``CHANGELOG.rst`` -> ``CHANGELOG``.
+- Add ``docs/api.rst`` for documentation of API code. Initial class
+  imported with docstring example.
+- Automatically generate header spacing based on length of
+  ``cookiecutter`` variables.
+
+Example data
+~~~~~~~~~~~~
+
+- Example TestCase.
+- Example Class w/ docstrings.
+
+.. _flask: http://flask.pocoo.org
+.. _werkzeug: http://werkzeug.pocoo.org
+.. _werkzeug testsuite: https://github.com/mitsuhiko/werkzeug/tree/master/werkzeug/testsuite
+.. _sqlalchemy: http://sqlalchemy.org
+.. _sqlalchemy changelog: http://docs.sqlalchemy.org/en/latest/changelog/ 
+.. _sphinx changelog: https://pypi.python.org/pypi/changelog
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
+.. _cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
+.. _
+
+.. _audreyr/cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
+
+.. # vim: set filetype=rst:
