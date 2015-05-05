@@ -13,7 +13,9 @@ used on the `tmuxp`_, `cihai-python`_ and `vcspull`_ projects.
 - Vanilla testing setup with `unittest` and `python setup.py test`
 - Travis-CI_: Ready for Travis Continuous Integration testing
 - Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3
-- Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_. Note: You can install sphinx docs requirements with ``$ pip install -r docs/requirements.txt``.
+- Sphinx_ docs: Documentation ready for generation with, for example, 
+  ReadTheDocs_. Note: You can install sphinx docs requirements with 
+  ``$ pip install -r docs/requirements.txt``.
 
 Additions and changes
 ---------------------
@@ -148,8 +150,10 @@ Then:
 
 * Create a repo and put it there.
 * Add the repo to your `Travis-CI`_ account.
-* Add the repo to your `ReadTheDocs`_ account + turn on the ReadTheDocs service hook.
-* Release your package the standard Python way. Here's a release checklist: https://gist.github.com/audreyr/5990987
+* Add the repo to your `ReadTheDocs`_ account + turn on the ReadTheDocs 
+  service hook.
+* Release your package the standard Python way. Here's a release 
+  checklist: https://gist.github.com/audreyr/5990987
 
 Not Exactly What You Want?
 --------------------------
@@ -160,11 +164,13 @@ Similar Cookiecutter Templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * `audreyr/cookiecutter-pypackage`_: Original pypackage.
-* `Nekroze/cookiecutter-pypackage`_: A fork of this with a PyTest test runner,
-  strict flake8 checking with Travis/Tox, and some docs and `setup.py` differences.
-
+* `sloria/cookiecutter-flask`_: A flask template with Bootstrap 3, asset
+  bundling + minification, starter templates and user accounts.
 * Also see the `network`_ and `family tree`_ for this repo. (If you find
-  anything that should be listed here, please add it and send a pull request!)
+  anything that should be listed here, please add it and send a pull
+  request!)
+
+.. _sloria/cookiecutter-flask: https://github.com/sloria/cookiecutter-flask
 
 Fork This / Create Your Own
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
