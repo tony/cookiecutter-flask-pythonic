@@ -179,7 +179,7 @@ Similar Cookiecutter Templates
   anything that should be listed here, please add it and send a pull
   request!)
 
-.. _tony/cookiecutter-pypackage-pythonic: https://github.com/sloria/cookiecutter-pypackage-pythonic
+.. _tony/cookiecutter-pypackage-pythonic: https://github.com/tony/cookiecutter-pypackage-pythonic
 .. _sloria/cookiecutter-flask: https://github.com/sloria/cookiecutter-flask
 
 Fork This / Create Your Own
