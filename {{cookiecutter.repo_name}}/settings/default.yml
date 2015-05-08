@@ -1,4 +1,5 @@
 debug: True
 host: localhost
 blueprints:
+  '/': '{{cookiecutter.repo_name}}.core.core'
   '/blueprint_example': '{{cookiecutter.repo_name}}.blueprint_example.blueprint_example'

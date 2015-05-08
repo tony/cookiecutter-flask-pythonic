@@ -2,7 +2,22 @@
 Changelog
 =========
 
-Here you can find the recent changes to cookiecutter-pypackage
+Here you can find the recent changes to cookiecutter-flask-pythonic
+
+2015-05-08
+----------
+
+- [internal] Application object now raises a more helpful error when
+  registering a non-blueprint app object.
+- [tests] separate Application TestCase for testing new testcase.
+- [defaults] New core blueprint
+- [defaults] Default landing page for core blueprint
+
+2015-05-03
+----------
+
+- See Features in README.rd
+- Forked from tony/cookiecutter-pypackage-pythonic
 
 2015-03-26
 ----------

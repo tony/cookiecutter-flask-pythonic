@@ -7,13 +7,15 @@ from __future__ import (
 )
 
 
+import sys
 import os
 import argparse
 
 import kaptan
 from flask import Flask
 
-from ._compat import text_type, string_types, PY2, reraise
+from . import exc
+from ._compat import reraise
 from .util import convert_to_attr_dict, merge_dict, import_string, \
     default_config
 
@@ -33,7 +35,11 @@ class {{ cookiecutter.repo_name | capitalize }}(object):
         for url_prefix, blueprint_str in self.config.blueprints.items():
             blueprint = import_string(blueprint_str)
 
-            app.register_blueprint(blueprint, url_prefix=url_prefix)
+            try:
+                app.register_blueprint(blueprint, url_prefix=url_prefix)
+            except AttributeError as e:
+                type, value, traceback = sys.exc_info()
+                raise reraise(exc.AppBlueprintLoadException, value, traceback)
 
         self.app = app
 

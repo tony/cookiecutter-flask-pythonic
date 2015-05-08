@@ -10,7 +10,7 @@ from flask import Blueprint, request, jsonify
 blueprint_example = Blueprint('blueprint_example', __name__)
 
 
-@blueprint_example.route('/', defaults={'page': 'index'})
+@blueprint_example.route('/blueprint_example', defaults={'page': 'index'})
 @blueprint_example.route('/<page>')
 def show(page):
     return 'hi'

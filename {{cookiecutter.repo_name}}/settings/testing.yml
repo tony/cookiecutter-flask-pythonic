@@ -2,4 +2,5 @@ debug: True
 host: localhost
 port: 5454
 blueprints:
+  '/': '{{cookiecutter.repo_name}}.core.core'
   '/blueprint_example': '{{cookiecutter.repo_name}}.blueprint_example.blueprint_example'

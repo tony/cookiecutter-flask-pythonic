@@ -18,7 +18,7 @@ from . import unittest
 
 test_config = os.path.join(settings_path, 'testing.yml')
 
-class {{ cookiecutter.repo_name | capitalize }}TestCase(unittest.TestCase):
+class {{ cookiecutter.repo_name | capitalize }}(unittest.TestCase):
 
     def setUp(self):
         pass
@@ -34,7 +34,7 @@ class {{ cookiecutter.repo_name | capitalize }}TestCase(unittest.TestCase):
         pass
 
 
-class BlueprintAPITestCase(unittest.TestCase):
+class BlueprintExample(unittest.TestCase):
 
     app = None
 
@@ -54,7 +54,7 @@ class BlueprintAPITestCase(unittest.TestCase):
         response = self.app.get(url)
         self.assertNotEqual(response.status_code, 404)
 
-    def test_from_hsl(self):
+    def test_response(self):
         url = 'blueprint_example/test?q=${question}'.format(
             question="What's the meaning of life?"
         )
@@ -73,6 +73,6 @@ def suite():
     from .helpers import setup_path
     setup_path()
     suite = unittest.TestSuite()
-    suite.addTest(unittest.makeSuite({{ cookiecutter.repo_name | capitalize }}TestCase))
-    suite.addTest(unittest.makeSuite(BlueprintAPITestCase))
+    suite.addTest(unittest.makeSuite({{ cookiecutter.repo_name | capitalize }}))
+    suite.addTest(unittest.makeSuite(BlueprintExample))
     return suite
