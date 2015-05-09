@@ -183,6 +183,16 @@ Similar Cookiecutter Templates
 .. _tony/cookiecutter-pypackage-pythonic: https://github.com/tony/cookiecutter-pypackage-pythonic
 .. _sloria/cookiecutter-flask: https://github.com/sloria/cookiecutter-flask
 
+Testing
+~~~~~~~
+
+.. code-block:: shell
+
+   $ pip install -r dev-requirements.txt
+   $ sniffer
+   # edit any file in {{cookiecutter.repo_name}}
+   # todo: add run-tests.py for one-time runs
+
 Fork This / Create Your Own
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -194,7 +204,7 @@ be a fork.
   Templates list above with a brief description. 
 
 * It's up to you whether or not to rename your fork/own version. Do whatever
-  you think sounds good.
+  you think sounds good.T
 
 Or Submit a Pull Request
 ~~~~~~~~~~~~~~~~~~~~~~~~
