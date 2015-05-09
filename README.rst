@@ -204,7 +204,7 @@ be a fork.
   Templates list above with a brief description. 
 
 * It's up to you whether or not to rename your fork/own version. Do whatever
-  you think sounds good.T
+  you think sounds good.
 
 Or Submit a Pull Request
 ~~~~~~~~~~~~~~~~~~~~~~~~
