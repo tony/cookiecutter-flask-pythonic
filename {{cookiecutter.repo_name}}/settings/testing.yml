@@ -1,4 +1,4 @@
-debug: True
+DEBUG: True
 host: localhost
 port: 5454
 blueprints:

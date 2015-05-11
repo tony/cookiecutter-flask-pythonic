@@ -9,22 +9,12 @@
 from __future__ import absolute_import, division, print_function, \
     with_statement, unicode_literals
 
-import os
 import sys
 import collections
-import csv
 
 import pkgutil
 
 from ._compat import text_type, string_types, PY2, reraise
-
-current_path = os.path.abspath(os.path.join(
-    os.path.dirname(__file__),
-))
-parent_path = os.path.dirname(current_path)
-settings_path = os.path.join(parent_path, 'settings')
-default_config = os.path.join(settings_path, 'default.yml')
-
 
 # Code from https://github.com/pypa/warehouse
 # Copyright 2013 Donald Stufft
