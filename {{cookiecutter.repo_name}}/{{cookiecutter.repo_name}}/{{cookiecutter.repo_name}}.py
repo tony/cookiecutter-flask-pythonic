@@ -16,8 +16,8 @@ from flask import Flask
 
 from . import exc
 from ._compat import reraise
-from .util import convert_to_attr_dict, merge_dict, import_string, \
-    default_config
+from .settings import default_config
+from .util import convert_to_attr_dict, merge_dict, import_string
 
 
 class {{ cookiecutter.repo_name | capitalize }}(object):

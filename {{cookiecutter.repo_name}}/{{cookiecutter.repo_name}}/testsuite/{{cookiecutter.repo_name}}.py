@@ -12,7 +12,7 @@ import os
 
 from flask import json
 
-from ..util import settings_path
+from ..settings import settings_path
 from .. import {{ cookiecutter.repo_name }}
 from . import unittest
 

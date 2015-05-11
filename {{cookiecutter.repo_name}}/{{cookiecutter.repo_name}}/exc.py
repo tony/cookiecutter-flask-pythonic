@@ -26,7 +26,7 @@ class AppException(Exception):
     """Base Exception for App Errors."""
 
 
-class AppBlueprintLoadException(Exception):
+class AppBlueprintLoadException(AppException):
 
     def __str__(self):
         return text_type(self.message) + APP_BLUEPRINT_LOAD_EXCEPTION_MSG
