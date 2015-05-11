@@ -53,6 +53,10 @@ class AttributeDict(dict):
 
         return self[name]
 
+    def __dir__(self):
+        return list(
+            self.__dict__.keys()) + [text_type(key) for key in self.keys()
+        ]
 
 def merge_dict(base, additional):
     if base is None:
