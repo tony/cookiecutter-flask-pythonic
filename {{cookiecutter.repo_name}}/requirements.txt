@@ -1,3 +1,3 @@
 flask
 flask-script
-kaptan
+kaptan==0.5.8
