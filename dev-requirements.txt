@@ -1,2 +1,2 @@
 git+https://github.com/tony/cookiecutter@output_dir#eggname=cookiecutter
-sniffer==0.4.0
+sniffer==0.4.1
