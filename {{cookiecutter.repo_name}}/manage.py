@@ -3,7 +3,7 @@
 
 import sys
 
-from flask.ext.script import Manager
+from flask_script import Manager
 
 from {{ cookiecutter.repo_name }} import {{ cookiecutter.repo_name | capitalize }}
 
@@ -19,7 +19,7 @@ instance.
 
 def app_wrapper(*args, **kwargs):
     """App factory returns the :class:`flask.Flask` via ``__call__``,
-    but because of the way :class:`flask.ext.script.Manager` handles
+    but because of the way :class:`flask_script.Manager` handles
     accepting app objects, this wrapper returns the flask object directly.
 
     :returns: Flask object build from CLI
